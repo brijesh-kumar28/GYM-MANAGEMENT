@@ -1,0 +1,72 @@
+.navbar .nav-link {
+    color: #f5f5f5 !important;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+        color: #ffcc00 !important;
+        border-bottom: 2px solid #ffcc00;
+    }
+
+.navbar .btn {
+    font-weight: 500;
+}
+/* Mobile View Adjustments */
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none; /* Hide desktop menu */
+    }
+
+    .header-section .logo h4 {
+        font-size: 18px;
+    }
+
+    .header-section .d-flex.align-items-center {
+        display: none; /* Hide login partial on mobile */
+    }
+
+    .offcanvas-menu-wrapper {
+        display: block; /* Show mobile menu */
+    }
+}
+
+@media (max-width: 768px) {
+    .fs-about p {
+        font-size: 14px;
+    }
+
+    .fs-widget h4 {
+        font-size: 16px;
+    }
+
+    .fs-widget ul li {
+        font-size: 14px;
+    }
+
+    .fw-recent h6 a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-section .logo img {
+        height: 30px;
+    }
+
+    .header-section .logo h4 {
+        font-size: 16px;
+    }
+
+    .footer-section .container .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section .fs-about,
+    .footer-section .fs-widget {
+        margin-bottom: 20px;
+    }
+}
